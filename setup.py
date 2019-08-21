@@ -36,10 +36,13 @@ setup(
         'eox_azure'
     ],
     include_package_data=True,
-    install_requires=[],
+    install_requires=['azure-storage==v0.20.3'],
     zip_safe=False,
     entry_points={
         "lms.djangoapp": [
+            'eox_azure = eox_azure.apps:EoxAzureConfig',
+        ],
+        "cms.djangoapp": [
             'eox_azure = eox_azure.apps:EoxAzureConfig',
         ],
     }

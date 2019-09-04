@@ -19,10 +19,6 @@ SECRET_KEY = 'secret-key'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-INSTALLED_APPS = [
-    'eox_azure'
-]
-
 TIME_ZONE = 'UTC'
 
 # This key needs to be defined so that the check_apps_ready passes and the
@@ -56,11 +52,10 @@ def plugin_settings(settings):
         None
     )
 
-    settings.ORA2_FILEUPLOAD_BACKEND = "django"
-
     if settings.AZURE_ACCOUNT_NAME and settings.AZURE_ACCOUNT_KEY and settings.AZURE_CONTAINER:
         settings.DEFAULT_FILE_STORAGE = 'eox_azure.storage.AzureStorageExtended'
+        settings.ORA2_FILEUPLOAD_BACKEND = "django"
 
-    settings.COURSE_IMPORT_EXPORT_STORAGE = 'django.core.files.storage.FileSystemStorage'
+        settings.COURSE_IMPORT_EXPORT_STORAGE = 'django.core.files.storage.FileSystemStorage'
 
-    settings.USER_TASKS_ARTIFACT_STORAGE = settings.COURSE_IMPORT_EXPORT_STORAGE
+        settings.USER_TASKS_ARTIFACT_STORAGE = settings.COURSE_IMPORT_EXPORT_STORAGE

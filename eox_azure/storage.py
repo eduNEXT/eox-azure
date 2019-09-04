@@ -15,7 +15,7 @@ class AzureStorageExtended(AzureStorage):  # pylint: disable=abstract-method
     is out of date
     """
 
-    def __init__(self, container=None, url_expiry_secs=None, *args, **kwargs):
+    def __init__(self, container=None, url_expiry_secs=None, *args, **kwargs):  # pylint: disable=keyword-arg-before-vararg
         """
         Override base implementation so that we can accept a container
         parameter and an expiration on urls

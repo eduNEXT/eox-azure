@@ -2,10 +2,10 @@
 Module that defines the AzureStorage Wrapper.
 """
 from datetime import datetime, timedelta
-import pytz
 
-from storages.backends.azure_storage import AzureStorage
+import pytz
 from azure.storage import AccessPolicy, SharedAccessPolicy
+from storages.backends.azure_storage import AzureStorage
 
 
 class AzureStorageExtended(AzureStorage):  # pylint: disable=abstract-method

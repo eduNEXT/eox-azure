@@ -16,12 +16,5 @@ pylint==1.9.3
 pycodestyle==2.5.0
 
 # Keep same platform version
-djangorestframework==3.6.3
-django-ipware==2.1.0
-django-model-utils==3.0.0
-edx-milestones==0.1.13
-edx-opaque-keys==0.4.4
-importlib-resources==3.2.1
-jsonfield==2.0.2
-testfixtures==6.4.3
-isort==4.3.21
+azure-storage==v0.20.3
+django-storages==1.4.1

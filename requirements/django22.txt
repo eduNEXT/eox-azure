@@ -1,0 +1,4 @@
+Django==2.2.16
+djangorestframework==3.9.4
+django-model-utils==4.0.0
+edx-opaque-keys==2.1.0

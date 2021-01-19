@@ -1,0 +1,7 @@
+# Main requirements of your plugin application.
+-c constraints.txt
+
+Django
+azure-storage
+django-storages
+pytz

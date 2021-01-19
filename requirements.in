@@ -1,8 +1,0 @@
-azure-storage==v0.20.3
-coverage==4.5.1
-Django<2.0.0
-django-storages==1.4.1
-pytz==2018.9
-pylint==1.9.3
-pycodestyle==2.4.0
-mock==2.0.0

@@ -1,0 +1,8 @@
+-c constraints.txt
+-r base.txt
+
+coverage
+mock
+pycodestyle
+pylint
+testfixtures
